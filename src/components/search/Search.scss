@@ -1,0 +1,45 @@
+@import '../../scss/variable';
+
+.search-container{
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 700px;
+    height: 40vh;
+    margin: auto;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #382D3B;
+    border-radius: 20px;
+    border: 1px solid #FFF7DD;
+
+    h2{
+    font-family: $cizelFont;
+    letter-spacing: 2px;
+    }
+    .button-container{
+        background-color: #f5ead5;
+        width: 350px;
+        border-radius: 10px;
+        padding: 0 5px;
+        display: flex;
+        justify-content: space-between;
+        
+        
+        input{
+            font-family: $cizelFont;
+            font-size: .7rem;
+            width: 250px;
+            height: 30px;
+            background-color: transparent;
+            border: 0px solid;
+        }*:focus {
+            outline: none;
+        }
+    }
+}
+

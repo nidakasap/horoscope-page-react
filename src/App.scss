@@ -1,0 +1,11 @@
+@import './scss/reset';
+@import './scss/variable';
+
+
+body{
+     background-image: url(./img/card-bg.png);
+    .container{ 
+        color: $darkGold;
+    }
+}
+

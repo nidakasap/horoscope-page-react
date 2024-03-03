@@ -1,0 +1,61 @@
+@import '../../scss/variable';
+
+.horoscope-list-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  gap: rem;
+  padding: 60px;
+
+  .horoscope-card {
+    background-color: #FFF7DD;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: center;
+    padding: 60px;
+    border-radius: 20px;
+    opacity: 100%;
+    h1{
+      font-family: $cizelFont;
+    }
+    img{
+        width: 150px;
+    }
+    .card-over {
+      border-radius: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+
+      #horoscope-description {
+        font-family: $playfairFont;
+        font-size: 18px;
+        padding: 1rem;
+        text-align: center;
+        letter-spacing: 1px;
+      }
+    }
+  }
+  .horoscope-card:hover {
+    filter: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .horoscope-list-container {
+    grid-template-columns: repeat(1, 1fr);
+
+    #horoscope-description {
+      font-size: 13px;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1150px) {
+  .horoscope-list-container {
+    grid-template-columns: repeat(2, 1fr);
+    #horoscope-description {
+      font-size: 10px;
+    }
+  }
+}
