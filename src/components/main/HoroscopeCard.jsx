@@ -5,7 +5,7 @@ const HoroscopeCard = ({ data }) => {
   const { id, title, date, desc, image } = data;
 
   return (
-    <div key={id} className="horoscope-card">
+    <div className="horoscope-card">
       <div className="card-over">
         <img src={image} alt="" />
         <h1>{title}</h1>

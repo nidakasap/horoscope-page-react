@@ -29,9 +29,7 @@ const Search = () => {
         <div className="select-container">
           <h2>Learn more about your sign.</h2>
           <select onChange={handleSelectChange}>
-            <option value="" disabled selected>
-              Select your sign
-            </option>
+            <option>Select your sign</option>
             {zodiacSignOptions.map((sign, index) => (
               <option key={index} value={sign}>
                 {sign}
@@ -46,9 +44,6 @@ const Search = () => {
             horoscope =>
               horoscope.title === selectedSign && (
                 <div key={horoscope.title} className="sign-info">
-                  <div className="close-button" onClick={() => setSelectedData(null)}>
-                    {'<- Back to search'}
-                  </div>
                   <div>
                     <h1>{horoscope.title}</h1>
                     <h5>{horoscope.date}</h5>
@@ -78,10 +73,12 @@ const Search = () => {
                       Dislikes:
                       <span>{horoscope.dislikes}</span>
                     </p>
+                    å
                     <h4>
                       Summary: <span>{horoscope.summary}</span>
                     </h4>
                   </div>
+                  <div onClick={() => setSelectedData(null)}>{'<- Back to search'}</div>
                 </div>
               )
           )}

@@ -6,7 +6,7 @@ const HoroscopeList = () => {
   return (
     <div className="horoscope-list-container">
       {horoscopes.map(horoscope => (
-        <HoroscopeCard data={horoscope} />
+        <HoroscopeCard key={horoscope.id} data={horoscope} />
       ))}
     </div>
   );
