@@ -4,8 +4,8 @@
     background-repeat:no-repeat;
     background-position: center center;
     background-size: contain;
-    width: 700px;
-    height: 40vh;
+    width: 60%;
+    height: 70vh;
     margin: auto;
     margin-bottom: 3rem;
     display: flex;
@@ -15,30 +15,79 @@
     align-items: center;
     background-color: #382D3B;
     border-radius: 20px;
-    border: 1px solid #FFF7DD;
-
+    border: 1px solid $beige;
+    .select-container{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+    }
     h2{
     font-family: $cizelFont;
     letter-spacing: 2px;
     }
-    .button-container{
-        background-color: #f5ead5;
+    select {
+        background-color: $beige;
         width: 350px;
+        font-size: 17px;
+        border: none;
         border-radius: 10px;
-        padding: 0 5px;
+        padding: 10px;
+        font-family: $cizelFont;
+      
+        &:focus {
+          outline: none;
+        }        
+      }
+      .sign-info{
+        font-family: $cizelFont;
+        width: 80%;
+        margin: auto;
         display: flex;
-        justify-content: space-between;
-        
-        
-        input{
-            font-family: $cizelFont;
-            font-size: .7rem;
-            width: 250px;
-            height: 30px;
-            background-color: transparent;
-            border: 0px solid;
-        }*:focus {
-            outline: none;
+        flex-direction: column;
+        gap: 1.2rem;
+        align-items: center;
+        position: relative;
+        .close-button{
+          position: absolute;
+          left: -40px;
+          top:-80px;
+          cursor: pointer;
+        }
+        .sign-feautures{   
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            span{
+              color: $beige
+            }          
+        }
+        .summary-part{
+          span{
+            color: $beige
+          }
+        }
+      }
+     
+      @media (max-width: 900px) {
+        /* Adjust font size for smaller screens */
+        h2 {
+            font-size: 16px;
+        }
+
+        select {
+            font-size: 14px;
+        }
+
+        .sign-info {
+            font-size: 14px;
+
+            .sign-feautures,
+            .summary-part {
+                span {
+                    font-size: 12px;
+                }
+            }
         }
     }
 }

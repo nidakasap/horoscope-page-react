@@ -29,7 +29,28 @@
       text-decoration: none;
       color: $darkGold;
       font-family: $cizelFont;
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
+    .disabled-link{
+    cursor: none;
+    }
+  }
+  @media (max-width: 900px) {
+    .menu {
+        a {
+            font-size: 1rem;
+        }
+    }
+
+    padding: 0 1rem;
+  }
+  @media (max-width: 550px) {
+    .menu {
+        a {
+            font-size: .7rem;
+        }
+    }
+
+    padding: 0 1rem;
   }
 }

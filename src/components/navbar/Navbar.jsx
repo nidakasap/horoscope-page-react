@@ -1,4 +1,3 @@
-import React from 'react';
 import './Navbar.scss';
 import logo from '../../img/logo.png';
 
@@ -19,12 +18,12 @@ const Navbar = ({ activePage, setActivePage }) => {
           </a>
         </li>
         <li>
-          <a href="#two" className="link">
+          <a href="#two" className="link disabled-link">
             Tarot
           </a>
         </li>
         <li>
-          <a href="#three" className="link">
+          <a href="#three" className="link disabled-link" disabled>
             Astrology
           </a>
         </li>

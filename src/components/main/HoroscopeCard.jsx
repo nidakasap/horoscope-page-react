@@ -1,4 +1,5 @@
 import './HoroscopeList.scss';
+import axios from 'axios';
 
 const HoroscopeCard = ({ data }) => {
   const { id, title, date, desc, image } = data;
